@@ -16,11 +16,11 @@ impl Generator {
 
   /// Generates a random string of words
   ///
-  /// This method generates a string containing random
-  /// words from the words/en.txt file
+  /// This method generates a string containing random words
   pub fn generate_random_string(amount: usize, language_index: usize) -> String {
     let words = vec![
-        include_str!("../words/en.txt")
+        include_str!("../words/en.txt"),
+        include_str!("../words/pl.txt"),
     ];
 
     let words = words[language_index].lines()

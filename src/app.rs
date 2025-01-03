@@ -97,7 +97,8 @@ impl App {
       stats_window,
 
       languages: vec![
-        String::from("en")
+        String::from("en"),
+        String::from("pl")
       ],
 
       language_index: 0
